@@ -1,6 +1,9 @@
 class PagesController < ApplicationController
   
   def services
+    @layout='none'
+    @description = 'Consected provides business consulting services, from leadership, to strategy, through implementation'
+    @title = 'Consected Services'
 
     render :services
   end
