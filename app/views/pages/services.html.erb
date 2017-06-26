@@ -110,4 +110,8 @@
       $.scrollTo(p);
     
   });
+  
+  if(location.hash) {
+    $('ul.nav-tabs a[href="'+location.hash+'"]').click();
+  }
 </script>
