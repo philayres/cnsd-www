@@ -1,0 +1,94 @@
+<%
+@updated_at = File.mtime(__FILE__)
+@created_at = File.mtime(__FILE__)
+    @layout='wide'
+    @description = 'Consected provides business consulting services, from leadership, to strategy, through implementation'
+    @title = 'Consected Services'
+%>
+
+<div class="inner cover first wide dark-cover">
+  
+  <h1 class="cover-heading">We Provide Business Consulting Services.</h1>
+  <div class="container" >
+
+    <p class="full">Consected is a company of business experts. With decades of experience across diverse organizations we bring best-practices for operations, an ability to make processes work, a vision for products, and knowledge of the technology that supports them. </p>
+      <p class="full">For us the term <em>Expert</em> doesn't mean inflexible (or egotistical).  Our skills are based on walking the walk, not just academic success. We know what works and can provide anecdotes and references to back it up. </p>
+      <p class="full">With all of experience we still have minds that are young and inquiring, excited to innovate, accept criticism, push back when challenged, question the status quo, and seek disruptive solutions.</p>
+    <br/>
+    <p class="lead">We have the skills and experience to help you at any level, from <strong>leadership</strong> &gt; to <strong>strategy</strong> &gt; through <strong>implementation</strong></p>
+    <br />
+
+  </div>
+  
+</div>
+<div class="inner cover wide light-cover " id="service-container">
+  <h1>We strategize, of course.</h1>
+  <h2>And provide the <em>know-how</em> and <em>get-our-hands-dirty</em> to get things done.</h2>
+  <br/>
+  <div class="oval-container" >
+    <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a class="click-service pad-in-col text-center oval active" data-toggle="tab" href="#pm-strategy" ><span>Product &amp; Marketing<br/>Strategy</span></a></li>    
+    <li role="presentation"><a class="click-service pad-in-col text-center oval" data-toggle="tab" href="#ops-process" ><span>Operations &amp;  Process<br/>Improvement</span></a></li>
+    <li role="presentation"><a class="click-service pad-in-col text-center oval" data-toggle="tab" href="#it-marketing"><span>Information &amp; Marketing<br/>Technology</span></a></li>
+    <li role="presentation"><a class="click-service pad-in-col text-center oval" data-toggle="tab" href="#pro-management" ><span>Project &amp; Program<br/>Management</span></a></li>
+    </ul>
+  </div>
+  <p class=""><br /></p>
+</div>
+<div class="inner cover wide dark-cover">
+  <div class="container" >
+    
+      <div class="full ">
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="pm-strategy" >          
+            <h3 class="text-center">Product &amp; Marketing Strategy</h3>
+            <p>The products and services a business provides to its customers are so under-served. They fail to generate revenue, because they fail to deliver what customers demand. Or they don't attract new customers, because new customers can't understand why the products are exactly what they need.</p>
+            <p>We help startups and established corporations understand their competitive environment, communicate the value of their products and formulate marketing programs around that value. We help you view products not as an engineering or development responsibility but a true corporate asset.</p>
+            <p class="text-right"><a class="btn btn-default" data-toggle="tab" href="#ops-process" aria-expanded="false">next >></a></p>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="ops-process" >
+            <h3 class="text-center">Operations &amp;  Process Improvement</h3>
+            <p >Organizations at every stage of their evolution see operational and process challenges. For startups, being scrappy starts to become a risk. For larger companies, outdated procedural approaches are holding things back.</p>
+            <p>We take an outside view, seeing how customer, vendors and employees view a troublesome organization. Then we walk the paper-trails, review the policy manuals, understand the constraints and see what needs to get done. And we make sure that happens. Efficiently, safely, enjoyably for employees. Cost effectively and with less frustration for vendors. And most importantly to achieve maximum customer satisfaction.</p>    
+            <p class="text-right"><a class="btn btn-default" data-toggle="tab" href="#pm-strategy" aria-expanded="false">&lt;&lt; prev</a> <a class="btn btn-default" data-toggle="tab" href="#it-marketing" aria-expanded="false">next >></a></p>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="it-marketing" >
+            <h3 class="text-center">Information &amp; Marketing Technology</h3>
+            <p>Many leaders recognize that they don't have all the knowledge they need to make strategic technology decisions for their organization. Ignoring the operational, financial and marketing problems that stem from outdated or lacking technology is not an option. Missing the competitive advantage that can be achieved with modern IT, cloud and marketing automation for fear of making an expensive mis-step is holding your company back.</p>
+            <p>Consected has years of experience with IT systems in major organizations and has implemented new solutions rapidly and inexpensively. We can help you see when off-the-shelf software may be less expensive than open-source software. And how to evaluate potential systems for the business, separating vendor demo-ware from what's real, here and now.</p>    
+            <p class="text-right"><a class="btn btn-default" data-toggle="tab" href="#ops-process" aria-expanded="false">&lt;&lt; prev</a> <a class="btn btn-default" data-toggle="tab" href="#pro-management" aria-expanded="false">next >></a></p>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="pro-management" >
+            <h3 class="text-center">Project &amp; Program Management</h3>
+            <p>Decisions have been made to make a change. But how? Who has the leadership ability coupled with the time to run critical programs and projects in your business? Who can do this without the managerial clout that comes from a big title or a line on the org-chart?</p>
+            <p>Often, the best people to run essential business projects requiring major change are people outside the business. Project Managers are best without a vested interest, without strong ties to the past. They excel with the personality and credibility that allows direction of diverse teams, in multiple locations, without the fear that comes from not being the boss. We have these skills and the background of running projects from two months to programs spanning multiple years to help you make the changes that you need.</p>    
+            <p class="text-right"><a class="btn btn-default" data-toggle="tab" href="#it-marketing" aria-expanded="false">&lt;&lt; prev</a> </p>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+      
+  
+  <p class=""><br /></p>
+  <p class="lead">We don't do "hard sell". So why not find out more?</p>
+  
+  <p class="lead">
+    <a href="/contact" class="btn btn-lg btn-default btn-cta">Contact Us</a>
+  </p>
+</div>
+
+<script>
+  $('.tab-pane a[data-toggle="tab"]').click(function(ev){
+    ev.preventDefault();
+    var h = $(this).attr('href');
+    $('ul.nav-tabs a[href="'+h+'"]').click();
+  });
+  
+  $('a[data-toggle="tab"]').click(function(ev){
+    var p = $(this).parents('.nav-tabs');
+    if(p.length > 0)
+      $.scrollTo(p);
+    
+  });
+</script>

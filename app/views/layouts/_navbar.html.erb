@@ -1,0 +1,7 @@
+<nav>
+  <ul class="nav masthead-nav">    
+    <li <%= (action_name == 'index' ? 'class="active"' : '').html_safe %>><a href="/">Home</a></li>
+    <li <%= (action_name == 'services' ? 'class="active"' : '').html_safe %>><a href="/services">Services</a></li>
+    <li <%= (action_name == 'contact' ? 'class="active"' : '').html_safe %>><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
