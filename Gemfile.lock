@@ -157,6 +157,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
   execjs
+  i18n
   jbuilder
   jquery-rails
   rails (~> 5.1)
