@@ -18,19 +18,20 @@
   </div>
   
 </div>
+<a id="section-sw-dev"></a>
 <div class="inner cover wide light-cover " id="service-container">
   <h1>We strategise, of course.</h1>
   <h2>And provide the <em>know-how</em> and <em>get-our-hands-dirty</em> to get things done.</h2>
   <br/>
   <div class="oval-container" >
     <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a class="click-service pad-in-col text-center oval active" data-toggle="tab" href="#pm-strategy" ><span>Product &amp; Marketing<br/>Strategy</span></a></li>    
-    <li role="presentation"><a class="click-service pad-in-col text-center oval" data-toggle="tab" href="#ops-process" ><span>Operations &amp;  Process<br/>Improvement</span></a></li>
-    <li role="presentation"><a class="click-service pad-in-col text-center oval" data-toggle="tab" href="#it-marketing"><span>Information &amp; Marketing<br/>Technology</span></a></li>
-    <li role="presentation"><a class="click-service pad-in-col text-center oval" data-toggle="tab" href="#pro-management" ><span>Project &amp; Program<br/>Management</span></a></li>
-    <br/>
-    <li role="presentation" style="display: block; margin: 0 25%; width: 50%; max-width: none;"><a class="click-service pad-in-col text-center oval " data-toggle="tab" href="#sw-dev" ><span>Open Source Software &amp; Bespoke Development</span></a></li>      
-    
+      <li role="presentation" class="active"><a class="click-service pad-in-col text-center oval active" data-toggle="tab" href="#pm-strategy" ><span>Product &amp; Marketing<br/>Strategy</span></a></li>    
+      <li role="presentation"><a class="click-service pad-in-col text-center oval" data-toggle="tab" href="#ops-process" ><span>Operations &amp;  Process<br/>Improvement</span></a></li>
+      <li role="presentation"><a class="click-service pad-in-col text-center oval" data-toggle="tab" href="#it-marketing"><span>Information &amp; Marketing<br/>Technology</span></a></li>
+      <li role="presentation"><a class="click-service pad-in-col text-center oval" data-toggle="tab" href="#pro-management" ><span>Project &amp; Program<br/>Management</span></a></li>
+      <br/>
+      <li role="presentation" style="display: block; margin: 0 25%; width: 50%; max-width: none;"><a class="click-service pad-in-col text-center oval " data-toggle="tab" href="#sw-dev" ><span>Open Source Software &amp; Bespoke Development</span></a></li>      
+    </ul>
   </div>
   <p class=""><br /></p>
 </div>
@@ -70,13 +71,13 @@
               <ul>
                   <li><a href="https://services.consected.com">Consected Locate</a>
                       <ul>
-                      <li><a href="https://github.com/philayres/cnsd-locate-web">GitHub project for the front end</a></li>
-                      <li><a href="https://github.com/philayres/cnsd-locate">GitHub project for back end</a></li>
+                      <li>GitHub project for the <a href="https://github.com/philayres/cnsd-locate-web">front end</a></li>
+                      <li>GitHub project for the <a href="https://github.com/philayres/cnsd-locate">back end</a></li>
                       </ul>
                   </li>
-                  <li><a href="https://github.com/philayres/em-secure-api">em-secure-api - a very secure microplatform for implementing APIs in Ruby</a></li>
-                  <li><a href="http://babble-rnn.consected.com/">babble-rnn - Machine learning vocal audio, and attempting to create a babbling generator</a></li>    
-                  <li><a href="https://www.getinview.com/cities/58">GetInView.com - Find and list hotels and other accommodation online, for free</a></li>    
+                  <li><a href="https://github.com/philayres/em-secure-api">em-secure-api</a> - a very secure microplatform for implementing APIs in Ruby</li>
+                  <li><a href="http://babble-rnn.consected.com/">babble-rnn</a> - Machine learning vocal audio, and attempting to create a babbling generator</li>    
+                  <li><a href="https://www.getinview.com/cities/58">GetInView.com</a> - Find and list hotels and other accommodation online, for free</li>    
               </ul>
             <p class="text-right"><a class="btn btn-default" data-toggle="tab" href="#pro-management" aria-expanded="false">&lt;&lt; prev</a> </p>
           </div>
@@ -85,30 +86,5 @@
     
   </div>
       
-  
-  <p class=""><br /></p>
-  <p class="lead">We don't do "hard sell". So why not find out more?</p>
-  
-  <p class="lead">
-    <a href="/contact" class="btn btn-lg btn-default btn-cta">Contact Us</a>
-  </p>
 </div>
 
-<script>
-  $('.tab-pane a[data-toggle="tab"]').click(function(ev){
-    ev.preventDefault();
-    var h = $(this).attr('href');
-    $('ul.nav-tabs a[href="'+h+'"]').click();
-  });
-  
-  $('a[data-toggle="tab"]').click(function(ev){
-    var p = $(this).parents('.nav-tabs');
-    if(p.length > 0)
-      $.scrollTo(p);
-    
-  });
-  
-  if(location.hash) {
-    $('ul.nav-tabs a[href="'+location.hash+'"]').click();
-  }
-</script>

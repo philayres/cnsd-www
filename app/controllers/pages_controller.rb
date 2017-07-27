@@ -5,7 +5,7 @@ class PagesController < ApplicationController
     @description = 'Consected provides business consulting services, from leadership, to strategy, through implementation'
     @title = 'Consected Services'
 
-    render :services
+    redirect_to '/#services'
   end
   
   def privacy
@@ -19,7 +19,7 @@ class PagesController < ApplicationController
     @layout=''
     @description = 'Contact Consected for more information about how we can help your business.'
     @title = 'Contact Consected'
-    render :contact
+    redirect_to '/#contact'
   end  
   
   

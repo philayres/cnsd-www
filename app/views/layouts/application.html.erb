@@ -3,8 +3,6 @@
 <head>
   <%= render partial: 'layouts/meta_tags' %>
 	
-  <link rel="icon" href="<?php echo $cdn_img ?>/favicon.ico" type="image/x-icon">
-	<link rel="shortcut icon" href="<?php echo $cdn_img ?>/favicon.ico" type="image/x-icon" />  
   
   
   <link href='//fonts.googleapis.com/css?family=News+Cycle|Varela+Round|Ubuntu' rel='stylesheet' type='text/css'>
@@ -15,20 +13,22 @@
 </head>
 <body class="<%=@layout ? @layout : 'regular-cover'%>">
   <div class="site-wrapper">
+    <div class="masthead clearfix">
+      <%= render partial: 'layouts/cookie_alert' %>
+      <div id="navcontainer" class="inner">
+        <h3 class="masthead-brand"><a href="/">Consected</a></h3>
+        <%=render partial: 'layouts/navbar' %>
+      </div>
+    </div>
 
       <div class="site-wrapper-inner">
 
         <div class="cover-container">
 
-          <div class="masthead clearfix">
-            <div class="inner">
-              <h3 class="masthead-brand"><a href="/">Consected</a></h3>
-              <%=render partial: 'layouts/navbar' %>
-            </div>
-          </div>
-
+          
+          <div class="content">
           <%=yield %>
-
+          </div>
           <%=render partial: 'layouts/footer'%>
 
         </div>
