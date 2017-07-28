@@ -18,6 +18,11 @@ body {
   overflow-y: scroll;
 }
 
+.site-wrapper-inner {
+    padding-top: 6em;
+    
+}
+
 .fixed {
   position: fixed;
 }
@@ -173,13 +178,17 @@ span.nobreak {white-space: nowrap;}
     font-size: 21px;
   } 
   
+  .site-wrapper-inner {
+    padding-top: 4em;
+    
+  }
   .lead {font-size: 21px;}
   
   .wide .cover {  
     position: relative;
     left: 0;
     right: 0;
-    padding: 20px 48px;    
+   // padding: 20px 48px;    
     overflow: hidden;
   } 
   
@@ -216,16 +225,23 @@ span.nobreak {white-space: nowrap;}
 
 
 @media (min-width: 992px) {
-    .contained {
-        max-width: 800px;
-      margin: 0 auto;
-    }
- 
+  .contained {
+      max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .site-wrapper-inner {
+    padding-top: 2em;
+    
+  }
       
 }
 
 @media (min-width: 1024px) {
-   ul.nav-tabs {width:980px;}  
+  .site-wrapper-inner {
+    padding-top: 2em;    
+  }
+  ul.nav-tabs {width:980px;}  
   ul.nav-tabs > li {
     float: left;
     min-width: 240px;
