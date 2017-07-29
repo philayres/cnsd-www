@@ -77,9 +77,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 24px;
   color: rgba(255, 255, 255, 0.65);
 }
-.inner {padding:20px; }
+.inner {
+    padding-top:20px;
+    padding-bottom:20px;
+}
 .cover { 
-    padding:20px; 
+    padding-top:20px;
+    padding-bottom:20px;
     background: rgba(0,0,0,0.47);
     
     text-shadow: 1px 1px 2px rgb(0, 0, 0);
@@ -188,7 +192,8 @@ span.nobreak {white-space: nowrap;}
     position: relative;
     left: 0;
     right: 0;
-   // padding: 20px 48px;    
+    padding-top:20px;
+    padding-bottom:20px;
     overflow: hidden;
   } 
   
